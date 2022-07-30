@@ -3,9 +3,9 @@
 ## Оглавление 
 1. [Цель проекта](#ProjectGoals)
 2. [Элементы библиотеки](#LibraryElements)
-    + [Класс `ConsoleLogger`](#ConsoleLogger)
-    + [Класс `ConfigParser<T>`](#ConfigParser)
-    + [Класс `NullConfigException`](#NullConfigException)
+    + [Класс ConsoleLogger](#ConsoleLogger)
+    + [Класс ConfigParser\<T\>](#ConfigParser)
+    + [Класс NullConfigException](#NullConfigException)
 3. [Примеры реалезации библиотеки](#LibraryExamples)
 4. [Свойства проекта](#ProjectProperties)
 
