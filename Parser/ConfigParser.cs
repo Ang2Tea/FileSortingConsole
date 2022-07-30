@@ -1,10 +1,6 @@
 ﻿using FileSorting.Core.Configs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Json;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace FileSortingConsole.Parser
 {
@@ -18,6 +14,10 @@ namespace FileSortingConsole.Parser
             this.configPath = configPath;
         }
 
+        public static ISortingConfig Parse<TConfig>(string configPath) where TConfig: ISortingConfig
+        {
+            return new ConfigParser<TConfig>(configPath).Parse();
+        }
         public ISortingConfig Parse()
         {
             string fileText;
