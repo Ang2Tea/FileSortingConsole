@@ -8,3 +8,8 @@ ConsoleLogger logger = new();
 FilesSorting sorting = new(configParser.Parse(), logger);
 
 sorting.StartMovingFile();
+
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("Sorting complete!");
+Console.ResetColor();
+Console.ReadLine();
